@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    width: 1360px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+body {
+    background-color: #07074e;
+    font-family: "Anybody", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    background: #17175e;
+    border: 2px solid #111192;
+    border-radius: 1rem;
+    box-shadow: 0 0 25px #111192;
+    overflow: hidden;
+  }
+
+  .wrapper .form-box {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .wrapper .form-box.login {
+    left: 0;
+    padding: 0 4rem 0 2rem;
+  }
+
+  .wrapper .form-box.login .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+  .wrapper.active .form-box.login .animation {
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+  }
+
+  /* rightform */
+
+  .wrapper .form-box.register {
+    right: 0;
+    padding: 0 2rem 0 4rem;
+    pointer-events: none;
+  }
+
+  
+  .wrapper.active .form-box.register {
+    pointer-events: auto;
+  }
+
+
+  .wrapper .form-box.register .animation {
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+
+  .wrapper.active .form-box.register .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+  }
+
+    .form-box h2{
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .form-box .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 25px 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid #fff;
+        padding-right: 25px;
+        transition: .5s;
+    }
+
+    .input-box input:focus,
+    .input-box input:valid {
+        border-bottom-color: #19fb19;
+    } 
+
+
+    .input-box label {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        color: #fff;
+        font-size: 1rem;
+        pointer-events: none;
+        transform: translateY(-50%);
+        transition: .5s;
+    }
+
+    .input-box input:focus ~ label,
+    .input-box input:valid ~ label {
+        top: -5px;
+        color: #19fb19;
+        font-size: 0.8rem;
+    }
+
+    .input-box i {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        color: #fff;
+        font-size: 18px;
+        pointer-events: none;
+        transform: translateY(-50%);
+    }
+
+    .btn {
+        position: relative;
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        border: 2px solid #111192;
+        border-radius: 2rem;
+        cursor: pointer;
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 600;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .btn::before {
+        content: "";
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 300%;
+        background: linear-gradient( #07074e,#111192);
+        z-index: -1;
+        transition: .5s;
+    }
+
+    .btn:hover::before {
+        top: 0;
+    }
+
+    .form-box .log-reg-link {
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        margin: 20px 0 10px;
+    }
+
+    .log-reg-link p a {
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .log-reg-link p a:hover {
+        color: #0c0cdd;
+        text-decoration: underline;
+    }
+
+/* ===rightside=== */
+  
+.wrapper .info-text {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wrapper .info-text.login {
+    right: 0;
+    text-align: right;
+    padding: 0 1.5rem 3rem 6rem;
+}
+
+.wrapper .info-text.login .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+  .wrapper.active .info-text.login .animation {
+    transform: translateX(120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: calc(.1s * var(--i));
+  }
+
+.wrapper .info-text.register {
+    left: 0;
+    text-align: left;
+    padding: 0 6rem 3rem 1.5rem;
+    pointer-events: none;
+}
+
+.wrapper .info-text.register .animation {
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition: .7s ease;
+    transition-delay: calc(.1s * var(--j));
+  }
+
+.wrapper.active .info-text.register .animation {
+    transform: translateX(0);
+    opacity: 1;
+    filter: blur(0);
+    transition-delay: calc(.1s * var(--i));
+  }
+
+
+.info-text h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.info-text p {
+    color: #fff;
+}
+
+
+/* center animation */
+
+.wrapper .bg-animation {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    width: 850px;
+    height: 600px;
+    background:linear-gradient(45deg, #1818ba, #3a8951) ;
+    transform: rotate(10deg) skewY(40deg);
+    transform-origin: bottom right;
+    transition: 1.5s ease;
+    border-bottom: 3px solid #19f119;
+    transition-delay: 1.6s;
+}
+
+.wrapper.active .bg-animation {
+      transform: rotate(0deg) skewY(0deg);
+      transition-delay: .5s
+}
+
+.bg-animation2 {
+    position: absolute;
+    top: 100%;
+    left: 250px;
+    width: 850px;
+    height: 700px;
+    background: red;
+    /* background:linear-gradient(45deg, #1818ba, #3a8951) ; */
+    transform: rotate(0deg) skewY(0deg);
+    transform-origin: bottom left;
+    transition: 1.5s ease;
+    border-top: 3px solid #19f119;
+    transition-delay: .5s;
+}
+
+.wrapper.active .bg-animation2 {
+      transform: rotate(-11deg) skewY(-41deg);
+      transition-delay: 1.2s;
+} 
+
+
+@media (min-width: 651px) and (max-width: 1100px) {
+       
+  .wrapper {
+    /* width: 100%; */
+    /* height: 100%; */
+  }
+
+  
+}
+
+@media (max-width: 480px)  {
+    .wrapper {
+    width: 750px;
+    justify-content: center;
+    /* height: 80%; */
+  }
+
+    .wrapper .bg-animation {
+    height: 20%;
+  }
+
+}

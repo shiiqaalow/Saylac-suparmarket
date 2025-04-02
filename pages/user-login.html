@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in-page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/user-login.css">
+</head>
+<body>
+
+    <div class="wrapper container">
+        <span class="bg-animation"></span>
+        <span class="bg-animation2"></span>
+        <div class="form-box login">
+            <h2 class="animation" style="--i:0; --j:21;">Log In</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:1; --j:22;">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box animation" style="--i:2; --j:23;">
+                    <input type="password" required>
+                    <label for="">password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button  type="submit" class="btn animation" style="--i:3; --j:24;">Log In</button>
+
+                <div class="log-reg-link animation" style="--i:4; --j:25;">
+                    <p>Don't have an account? <a href="#" class="register-link"> Sign UP</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="info-text login">
+            <h2  class="btn animation" style="--i:0; --j:20;">Welcome Back!</h2>
+            <p  class="btn animation" style="--i:1; --j:21;">Enter Your Credentials Here!</p>
+        </div>
+
+        <div class="form-box register">
+            <h2 class="animation" style="--i:17;">Sign Up</h2>
+            <form action="#">
+                <div class="input-box animation" style="--i:18; --j:1;">
+                    <input type="text" required>
+                    <label for="">Username</label>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box animation" style="--i:19; --j:2;">
+                    <input type="email" required>
+                    <label for="">Email</label>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box animation" style="--i:20; --j:3;">
+                    <input type="password" required>
+                    <label for="">password</label>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button  type="submit" class="btn animation" style="--i:21; --j:4;">Sign Up</button>
+
+                <div class="log-reg-link animation" style="--i:22; --j:5;">
+                    <p>Already have an account? <a href="#" class="login-link"> Log In</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="info-text register">
+            <h2 class="animation" style="--i:17; --j:0;">Welcome Back!</h2>
+            <p class="animation" style="--i:18; --j:1;">Enter Your Credentials Here!</p>
+        </div>
+    </div>
+    <!-- <div class="log-in container">
+        <div class="form-container sign-up">
+            <form action="">
+                <h1>Create Acount</h1>
+                <div class="sm-icons">
+                    <a href="" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="shiiqaalow" required>
+                <input type="email" placeholder="shiiqaalow123@gmail.com" required>
+                <input type="password" placeholder="password" required>
+                <button class="btn">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form action="">
+                <h1>Sign In</h1>
+                <div class="sm-icons">
+                    <a href="" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="shiiqaalow123@gmail.com" required>
+                <input type="password" placeholder="password" required>
+                <a class="reset-p" href="">Forgot Your Password</a>
+                <button class="btn">Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-pannel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter Your Credentials Here!</p>
+                    <button class=" btn hidden" id="login">Sign In</button>
+                </div>
+
+                <div class="toggle-pannel toggle-right">
+                    <h1>Hello Friend!</h1>
+                    <p>Register With Your Credentials Here!</p>
+                    <button class=" btn hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('login');
+        
+        registerBtn.addEventListener('click', () => {
+            container.classList.add("active");
+        });
+
+        loginBtn.addEventListener('click', () => {
+            container.classList.remove("active");
+        });
+        
+    </script> -->
+
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+        const registerLink = document.querySelector('.register-link');
+        const loginLink = document.querySelector('.login-link');
+
+        registerLink.onclick = () => {
+            wrapper.classList.add('active');
+        }
+
+        loginLink.onclick = () => {
+            wrapper.classList.remove('active');
+        }
+
+    </script>
+
+</body>
+</html>
