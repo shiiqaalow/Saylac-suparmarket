@@ -241,15 +241,22 @@ span {
 
   .btn {
     background: #2799dc;
-    padding: 0.5rem;
-    width: 100px;
-    border-radius: 1rem;
+    padding: .8rem 3rem;
+    border-radius: 2rem;
     border: none;
   }
 
   .btn:hover {
     background: #38b6ff;
     cursor: pointer;
+  }
+
+
+  .clothing-banners {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    flex-wrap: wrap;
   }
 
 
