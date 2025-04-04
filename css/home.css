@@ -7,9 +7,8 @@
 }
 
 body {
-  background-color: #07074e;
-  /* background: #221a18; */
-  /* background: #0f0909; */
+  /* background-color: #07074e; */
+  background: #242528;
   font-family: "Anybody", sans-serif;
 }
 
@@ -61,7 +60,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #0f0f5d;
+  background: #393b3e;
+  border-radius: 1rem;
   padding: 1rem;
 }
 
@@ -81,11 +81,13 @@ a {
 }
 
 select {
-  background: #38b6ff;
+  background: #434447;
+  color: #fff;
   width: 4rem;
   height: 1.3rem;
   letter-spacing: 2px;
   border-radius: 5px;
+  border: 2px solid #38b6ff;
 }
 
 .logo img {
@@ -97,7 +99,7 @@ select {
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  border-bottom: 2px solid #38b6ff;
+  border-bottom: 1px solid #38b6ff;
 }
 
 .logo-text span {
@@ -154,10 +156,7 @@ select {
 .navigations a:hover {
   color: #38b6ff;
 }
-/* 
-.mobile-menu {
-    display: none;
-} */
+ 
 
 .hamburger {
   display: none;
@@ -325,7 +324,6 @@ select {
 .mens-collection-items img,
 .Technology-collection-items img {
   width: 200px;
-  background-color: #f6f6f6;
   border-radius: 1rem;
 }
 
@@ -387,7 +385,6 @@ padding-top: 6rem;
   width: 200px;
   height: 200px;
   border-radius: 1rem;
-  background-color: #f6f6f6;
 }
 
 .trending-items,
@@ -400,7 +397,7 @@ padding-top: 6rem;
   align-items: center;
   gap: 1rem;
   text-align: center;
-  box-shadow: 0 0 10px rgb(17, 34, 110);
+  box-shadow: 0 0 10px #888b93;
   padding: 2rem 0;
   border-radius: 1rem;
   position: relative;
@@ -478,7 +475,7 @@ padding-top: 6rem;
 .furniture-collection-items:hover,
 .Technology-collection-items:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 90px rgb(27, 74, 210);
+  box-shadow: 0 0 90px #919399;
   .trending-product-action button {
     opacity: 1;
   }
@@ -527,14 +524,14 @@ padding-top: 6rem;
   justify-content: center;
   gap: 2rem;
   text-align: center;
-  box-shadow: 0 0 10px rgb(17, 34, 110);
+  box-shadow: 0 0 10px #888b93;
   padding: 1rem;
   border-radius: 1rem;
   flex-wrap: wrap;
 }
 
 .partner-companies:hover {
-  box-shadow: 0 0 90px rgb(27, 74, 210);
+  box-shadow: 0 0 90px #888b93;
 }
 
 .Partner-tittle h1 {
@@ -668,18 +665,17 @@ padding-top: 6rem;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
-    background: #0f0f5d;
     padding: 3rem;
     border-radius: 1em;
     animation: 4s ease-in-out;
-    box-shadow: 0 0 10px rgb(17, 94, 110);
+    box-shadow: 0 0 10px #989aa0;
   }
 
 
   
   .categories h1 {
     font-size: 1rem;
-    box-shadow: 0 0 10px rgb(17, 34, 110);
+    box-shadow: 0 0 10px #888b93;
     padding: 1rem;
     width: 250px;
     height: 100px;
@@ -690,7 +686,7 @@ padding-top: 6rem;
   }
 
   .categories h1:hover {
-    box-shadow: 0 0 90px rgb(17, 34, 110);
+    box-shadow: 0 0 90px #888b93;
     transform: scale(1.1);
   }
 
@@ -718,12 +714,12 @@ padding-top: 6rem;
   justify-content: center;
   gap: 2rem;
   padding: 1rem;
-  border: 7px solid #0f0f5d;
+  border: 7px solid #515153;
   border-radius: 1rem;
   position: relative;
 }
 .testimonial-info:hover {
-  background: #0f0f5d;
+  background: #38383d;
 }
 
 .testimonial-info::before {
@@ -731,7 +727,7 @@ padding-top: 6rem;
   position: absolute;
   top: -35px;
   left: -35px;
-  background: #07074e;
+  background:#242528;
   width: 100px;
   height: 60px;
 }
@@ -740,7 +736,7 @@ padding-top: 6rem;
   position: absolute;
   bottom: -35px;
   right: -35px;
-  background: #07074e;
+  background: #242528;
   width: 100px;
   height: 60px;
 }
@@ -749,7 +745,7 @@ padding-top: 6rem;
 .testimonial-info .clients-pic img {
   border-radius: 50%;
   position: absolute;
-  top: -10%;
+  top: -15%;
   left: 40%;
 }
 
