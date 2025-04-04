@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/clothing.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <!-- header -->
+    <header>
+        <div class="top-banner container">
+            <div class="tell">
+                <h3><i class="fa-solid fa-phone"></i> Tell: +27 678 920 087</h3>
+            </div>
+            <div class="user-choice">
+                <h3><a href="../pages/user-login.html"> <i class="fa-regular fa-user"></i> My account</a></h3>
+                <h3> <a href=""><i class="fa-solid fa-wallet"></i> My wishlist</a></h3>
+                <h3 id="money">
+                    <select>
+                        <option value="">$USD</option>
+                        <option value="">Shilling So.</option>
+                        <option value="">£uro</option>
+                    </select>
+                </h3>
+            </div>
+
+        </div>
+        <div class="logo container">
+            <div class="logo">
+                <div>
+                    <img src="../assets/Saylac Super Market Logo/Favicon.png" alt="logo icon">
+                </div>
+                <div class="logo-text">
+                    <h1>Saylac</h1>
+                    <span>SuperMarket</span>
+                </div>
+            </div>
+
+            <!-- <div class="search-box"> -->
+            <div class="search-box">
+                <input type="text" name="name" placeholder="Search for products...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <!-- </div> -->
+            </div>
+
+            <div class="hamburger">
+                <i class="fa-solid fa-bars" data-visible="true"></i>
+                <i class="fa-solid fa-close" data-visible="false"></i>
+              </div>
+
+        </div>
+
+        <div class="mobile-menu" data-visible="false">
+            <nav class="navigations">
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="../pages/Clothing">Clothing</a></li>
+                <li><a href="../pages/Furniture">Furniture</a></li>
+                <li><a href="../pages/Technology">Technology</a></li>
+                <li><a href="../pages/Food and Grocery">Food and Grocery</a></li>
+                <li><a href="../pages/Sports and Leisure">Sports and Leisure</a></li>
+                <li><a href="../pages/Health and Beauty">Health and Beauty</a></li>
+                <li><a href="../pages/Toys">Toys</a></li>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>+3</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

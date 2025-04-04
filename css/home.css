@@ -248,7 +248,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   margin-block: 4rem;
 }
 
@@ -276,7 +276,11 @@ select {
 
 .promo-tittle-1 h2,
 .promo-tittle-2 h2 {
-  color: rgb(88, 88, 18);
+  color: #060f0f;
+}
+.promo-tittle-1 p,
+.promo-tittle-2 p {
+  color: #fff;
 }
 
 .promotions .btn,
@@ -376,7 +380,7 @@ padding-top: 6rem;
 
 .furniture-promo #Discount {
   font-size: 2rem;
-  color: #9bff05;
+  color: blue;
   background: transparent;
 }
 
