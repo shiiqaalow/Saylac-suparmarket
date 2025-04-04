@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Clothing-page</title>
+    <title> Clothing-page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -22,7 +22,7 @@
                 <h3><a href="../pages/user-login.html"> <i class="fa-regular fa-user"></i> My account</a></h3>
                 <h3> <a href=""><i class="fa-solid fa-wallet"></i> My wishlist</a></h3>
                 <select>
-                    <option value="">$USD</option>
+                    <option value=""><img src="../assets/Web Images/icons8-first-flag-of-the-usa-48.png" alt=""> $USD</option>
                     <option value="">Sh-So.</option>
                     <option value="">£uro</option>
                 </select>
@@ -41,17 +41,23 @@
             </div>
 
             <!-- <div class="search-box"> -->
-            <div class="search-box">
-                <input type="text" name="name" placeholder="Search for products...">
-                <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-box1">
+                <input class="input2" type="text" name="name" placeholder="Search for products...">
+                <i id="i2" class="fa-solid fa-magnifying-glass"></i>
                 <!-- </div> -->
             </div>
 
             <div class="hamburger">
                 <i class="fa-solid fa-bars" data-visible="true"></i>
                 <i class="fa-solid fa-close" data-visible="false"></i>
-              </div>
+            </div>
 
+        </div>
+
+        <div class="search-box2 mobile-only">
+            <input type="text" name="name" placeholder="Search for products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <!-- </div> -->
         </div>
 
         <div class="mobile-menu" data-visible="false">
@@ -89,5 +95,26 @@
             <img src="../assets/Web Images/cate_4-122x122.png" alt="">
         </div>
     </section>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const mobileMenu = document.querySelector(".mobile-menu");
+        const icons = document.querySelectorAll("i");
+    
+        hamburger.addEventListener("click", function (event) {
+          const isVisible = mobileMenu.getAttribute("data-visible");
+          if (isVisible == "true") {
+            // qari hiding
+            mobileMenu.setAttribute("data-visible", "false");
+            icons[0].setAttribute("data-visible", "true");
+            icons[1].setAttribute("data-visible", "false");
+          } else if (isVisible == "false") {
+            // soo bandhig showing
+            mobileMenu.setAttribute("data-visible", "true");
+            icons[0].setAttribute("data-visible", "false");
+            icons[1].setAttribute("data-visible", "true");
+          }
+        });
+      </script>
 </body>
 </html>
