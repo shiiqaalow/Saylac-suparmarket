@@ -211,6 +211,46 @@ span {
     }
   }
 
+  /* clothing-hero section */
+
+  .clothing-hero {
+    background: url("../assets/Web\ Images/Clothing_Banner_7-1_1_1950x_1_.jpg") top/cover no-repeat;
+    height: 100vh;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .clothing-hero-tittle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .clothing-hero-tittle h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+  }
+  .clothing-hero-tittle p {
+    font-size: 1.5rem;
+    color: #bf8211;
+  }
+
+  .btn {
+    background: #2799dc;
+    padding: 0.5rem;
+    width: 100px;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  .btn:hover {
+    background: #38b6ff;
+    cursor: pointer;
+  }
 
 
 
@@ -333,3 +373,5 @@ span {
     .hamburger i[data-visible="false"] {
       display: none;
     }
+
+}   
