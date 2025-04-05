@@ -261,9 +261,16 @@ span {
   .clothing-banners {
     display: flex;
     justify-content: center;
-    gap: 8rem;
+    gap: 10rem;
     flex-wrap: wrap;
     margin-block: 4rem;
+  }
+
+  .clothing-banners div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
 
 
