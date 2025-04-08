@@ -7,7 +7,6 @@
 }
 
 body {
-  background-color: #290979; 
   font-family: "Anybody", sans-serif;
 }
 
@@ -20,14 +19,13 @@ body {
 img {
   width: 100px;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #fff;
+  color: black;
 }
 
 span {
@@ -43,39 +41,15 @@ p {
 }
 
 button {
-  color: #fff;
+  color: black;
 }
 
 li,
 a {
   list-style: none;
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
-
-span {
-    color: #bf8211;
-  }
-  
-  i {
-    color: #38b6ff;
-  }
-  
-  p {
-    color: #9da3b4;
-  }
-  
-  button {
-    color: #fff;
-  }
-  
-  li,
-  a {
-    list-style: none;
-    text-decoration: none;
-    color: #fff;
-  }
-  
   
 .wrapper {
   position: absolute;
@@ -160,7 +134,6 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #290979;
     border-radius: 1rem;
     padding: 1rem;
   }
@@ -171,9 +144,6 @@ span {
   }
   
   
-  .top-banner i:hover {
-    color: #fff;
-  }
   
   .user-choice {
     display: flex;
@@ -208,11 +178,18 @@ span {
   }
 
 
+  .logo-text span#logo-last-name {
+    color: black;
+  }
+  
+  /* mobile only-search-box */
+  
   .search-box2 {
     display: none;
   }
   
   
+  /* desktop-search-box */
   .search-box1 {
     position: relative;
   }
@@ -241,6 +218,7 @@ span {
   }
   
   .navigations a {
+    font-weight: 800;
     position: relative;
   }
   
@@ -274,16 +252,13 @@ span {
     font-size: 1.3rem;
     position: relative;
   }
-  
-  .cart i {
-    color: #fff;
-  }
+
   
   .cart span {
     position: absolute;
     bottom: 15px;
     right: 4px;
-    color: rgb(13, 211, 105);
+    color: #ff8400;
     z-index: -1;
     animation: float 3s infinite ease-in-out;
   }
@@ -315,23 +290,25 @@ span {
   .clothing-hero-tittle h1 {
     font-size: 4rem;
     text-align: center;
-    color: black;
+    text-transform: uppercase;
   }
   .clothing-hero-tittle p {
     font-size: 1.5rem;
-    color: #bf8211;
+    color: #ff9a03;
   }
 
   .btn {
-    background: #2799dc;
-    padding: .8rem 3rem;
-    border-radius: 2rem;
-    border: none;
+    background:  #ff8400;
+  font-weight: 800;
+  padding: 0.5rem;
+  width: 100px;
+  border-radius: 1rem;
+  border: none;
   }
-
   .btn:hover {
-    background: #38b6ff;
+    background: transparent;
     cursor: pointer;
+    border: 2px solid #ff8400;
   }
 
 
@@ -367,7 +344,8 @@ span {
 
   .Womens-collection-items img,
 .mens-collection-items img {
-  width: 200px;
+  width: 100%;
+  height: 250px;
   border-radius: 1rem;
 }
 
@@ -375,15 +353,11 @@ span {
 .mens-collection-items {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
   text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
-  background: rgba(22, 47, 124, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 2rem 0;
+  padding: 1rem .3rem;
   border-radius: 1rem;
   position: relative;
   animation: 0.5s ease-in-out;
@@ -449,15 +423,18 @@ span {
 
 } 
 
+.price-tag {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 /* footer section */
 
 .footer {
   backdrop-filter: blur(10px);
-  background: rgba(22, 47, 124, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
   color: #9da3b4;
   padding: 2rem ;
   margin-top: 5rem;
@@ -536,17 +513,15 @@ span {
   align-items: center;
   gap: 1rem;
   margin-top : .5rem;
-  background: #290979;
-  color: #38b6ff;
+  background: #38b6ff;
+  color: #fff;
   width: 25px;
   height: 25px;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: 0 0 10px #6a6b6c;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-
 .socials i:hover {
   background: #fff;
   color: #38b6ff;
@@ -557,7 +532,7 @@ span {
 .footer-bottom {
   text-align: center;
   padding-top: 20px;
-  border-top: 1px solid #fff;
+  border-top: 1px solid black;
 }
 
 .footer-bottom img {
