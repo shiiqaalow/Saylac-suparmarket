@@ -221,6 +221,43 @@ a {
     font-weight: 800;
     position: relative;
   }
+
+  /* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  min-width: 160px;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #444;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #444;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
   
   .navigations a::after {
     content: "";
@@ -365,15 +402,17 @@ a {
 
 .Womens-collection-items p,
 .mens-collection-items p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
+  color: black;
 }
 
 
 .Womens-collection-items span,
 .mens-collection-items span {
-  color: #f1a211;
+  color: #ff8400;
   font-size: 1rem;
+  font-weight: 700;
 }
 
 .Womens-product-action button,

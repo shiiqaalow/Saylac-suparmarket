@@ -226,6 +226,43 @@ select {
   position: relative;
 }
 
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* background-color: #333; */
+  min-width: 160px;
+  display: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-menu li {
+  border-bottom: 1px solid #444;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #444;
+}
+
+/* Show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
 .navigations a::after {
   content: "";
   position: absolute;
@@ -1261,18 +1298,6 @@ padding-top: 6rem;
     font-size: 1.5rem;
   }
 
-  .furniture-collection-items img {
-    width: 70%;
-  }
-
-  .Womens-collection-items img,
-  .mens-collection-items img {
-    width: 55%;
-  }
-
-  .Technology-collection-items img {
-    width: 60%;
-  }
 
   .trending-product-action button,
   .Womens-product-action button,
