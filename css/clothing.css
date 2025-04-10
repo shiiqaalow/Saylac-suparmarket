@@ -619,6 +619,28 @@ a {
 }
 
 
+/* brands */
+
+.brands {
+  display: flex;
+ gap: 2rem;
+ align-items: center;
+  margin-block: 4rem;
+  opacity: .5;
+  animation: slide 10s linear infinite;
+}
+
+
+
+@keyframes slide {
+  from {
+      transform: translateX(5%);
+  }
+
+  to {
+      transform: translateX(-40%);
+  }
+}
 
 
 
