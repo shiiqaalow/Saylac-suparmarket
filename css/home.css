@@ -360,6 +360,7 @@ select {
   margin-block: 3rem;
   animation: float 7s infinite ease-in-out;
 }
+
 .hero-img h1 {
   position: absolute;
   top: 40%;
