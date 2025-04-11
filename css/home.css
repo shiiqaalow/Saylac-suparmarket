@@ -566,7 +566,6 @@ padding-top: 6rem;
   position: relative;
   animation: 0.5s ease-in-out;
 }
-
 .trending-items p,
 .Womens-collection-items p,
 .mens-collection-items p,
@@ -580,6 +579,10 @@ padding-top: 6rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.product-rating i {
+  color: #ffa81d;
 }
 
 
