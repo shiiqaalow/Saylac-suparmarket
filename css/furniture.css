@@ -658,3 +658,86 @@ a {
       border-radius: 0.5rem;
     }
 }
+
+
+  /* furniture-hero section */
+
+  .furniture-hero {
+    background: url("../assets/Web\ Images/Furniture.jpeg") top/cover no-repeat;
+    height: 100vh;
+    border-radius: 1rem;
+    margin-bottom: 4rem;
+  }
+
+
+  .furniture-hero-tittle  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 27%;
+    left: 10%;
+  }
+
+
+  .furniture-hero-tittle .furniture-promo {
+    display: flex;
+    gap: 1rem;
+  }
+
+
+  .furniture-hero-tittle .arrivals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+  .furniture-hero-tittle h1,#span{
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .furniture-hero-tittle p {
+    font-size: 1.3rem;
+    line-height: 25px;
+  }
+
+  .btn {
+    background:  #ff8400;
+  font-weight: 800;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  }
+  .btn i {
+    color: black;
+    font-weight: 800;
+    padding-left: .5rem;
+  
+  }
+
+  .btn:hover {
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #ff8400;
+  }
+
+
+  .furniture-banners {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-block: 4rem;
+  }
+
+  .furniture-banners div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
