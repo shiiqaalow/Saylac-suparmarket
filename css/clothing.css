@@ -508,6 +508,10 @@ a {
   align-items: center;
 }
 
+.product-rating i {
+  color: #ffa81d;
+}
+
 
 /* footer section */
 
