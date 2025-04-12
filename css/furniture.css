@@ -372,8 +372,8 @@ a {
     gap: 1rem;
     align-items: center;
     position: absolute;
-    top: 25%;
-    left: 5%;
+    top: 30%;
+    left: 7%;
   }
 
 
@@ -391,10 +391,11 @@ a {
 
 
   .furniture-promo h1,#span{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
     font-style: italic;
+    font-weight: 800;
   }
 
   .furniture-promo #span{
@@ -402,26 +403,26 @@ a {
   }
 
   .furniture-hero .arrivals p {
-    font-size: 1.2rem;
-    line-height: 25px;
-    color: #666363;
+    color: black;
+    line-height: 1.5rem;
+    text-align: center;
   }
 
-  .btn {
+  .arrivals .btn {
     background:  #ff8400;
   font-weight: 800;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   border: none;
   }
-  .btn i {
+  .arrivals .btn i {
     color: black;
     font-weight: 800;
     padding-left: .5rem;
   
   }
 
-  .btn:hover {
+  .arrivals .btn:hover {
     background: transparent;
     cursor: pointer;
     border: 2px solid #ff8400;
@@ -446,7 +447,6 @@ a {
     align-items: center;
     gap: 2rem;
   }
-
 
 
   
@@ -657,7 +657,7 @@ a {
         border-radius: 0.5rem;
       }
 
-      .furniture-collection,
+      .furniture-collections,
       .footer-container {
         grid-template-columns: repeat(2,1fr);
       }
@@ -777,20 +777,15 @@ a {
         left: 5%;
       }
     
-      .furniture-hero .arrivals {
-        bottom: 10%;
-        left: 5%;
-    
-      }
     
       .furniture-promo h1,#span {
-        font-size: 2.5rem;
-      }
-    
-     
-    
-      .furniture-hero .arrivals p {
-        text-align: center;
+        font-size: 2.3rem;
       }
 
+      .Exclusive-products-header h1 {
+        font-size: 2rem;
+      }
+
+    
+     
 }
