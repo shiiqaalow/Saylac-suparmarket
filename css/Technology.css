@@ -191,6 +191,8 @@ a {
   
   .user-choice {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
   }
   
@@ -560,8 +562,100 @@ a {
       }
 }
 
+/* technology hero section */
 
 
+.Technology-hero img {
+    width: 110%;
+    height: 650px;
+  }
+  
+  .Technology-hero {
+    position: relative;
+    margin-block: 3rem;
+    animation: float 7s infinite ease-in-out;
+  }
+  
+  .Technology-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+
+  .Technology-promo p{
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .Technology-promo h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+  .Technology-promo #promo-amount{
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .Technology-promo span {
+    color: #ff9a03;
+    font-size: 1.5rem;
+    animation: furniture-promo 0.75s cubic-bezier(0.49, 0, 0.89, 0.74) infinite
+    alternate;
+}
+ 
+
+  .Technology-hero .arrivals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    bottom: 30%;
+    left: 40%;
+  }
+
+
+ 
+ 
+
+@keyframes furniture-promo  {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+  .clothing-hero-tittle p {
+    font-size: 1.5rem;
+    color: #ff9a03;
+  }
+
+  .btn {
+    background:  #ff8400;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+  }
+  .btn:hover {
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #ff8400;
+  }
 
 
 /* responsive Mobile  */
@@ -581,7 +675,7 @@ a {
       display: block;
       position: absolute;
       color: white;
-      top: 150px;
+      top: 185px;
       right: 0;
       width: 50px;
       height: 50px;
@@ -622,6 +716,7 @@ a {
         flex-direction: column;
         gap: 2rem;
       }
+
       
       .search-box1 {
         display: none;
@@ -657,4 +752,13 @@ a {
       color: #fff;
       border-radius: 0.5rem;
     }
+
+
+    .Technology-hero img {
+      height: 500px;
+ }
+    .Technology-promo p{
+    font-size: 1.2rem;
+    color: black;
+  }
 }
