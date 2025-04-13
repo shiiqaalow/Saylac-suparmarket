@@ -348,43 +348,57 @@ a {
 
   /* clothing-hero section */
 
-  .clothing-hero {
-    background: url("../assets/Web\ Images/Clothing_Banner_7-1_1_1950x_1_.jpg") top/cover no-repeat;
-    height: 100vh;
+  .clothing-hero img {
+    width: 100%;
+    height: 650px;
     border-radius: 1rem;
-    margin-bottom: 4rem;
   }
-
-  .clothing-hero-tittle {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  
+  .clothing-hero {
+    position: relative;
+    margin-block: 3rem;
+    animation: float 7s infinite ease-in-out;
   }
-
-  .clothing-hero-tittle .clothing-promo {
+  
+  .clothing-promo {
     display: flex;
     gap: 1rem;
-  }
-  .clothing-hero-tittle .arrivals {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 25%;
   }
 
-  .clothing-hero-tittle h1,#span{
+  .clothing-promo h1,#span{
     font-size: 4rem;
     text-align: center;
     text-transform: uppercase;
   }
-  .clothing-hero-tittle #span {
+
+  .clothing-promo #span {
     color: #4bc306;
     animation: furniture-promo 0.75s cubic-bezier(0.49, 0, 0.89, 0.74) infinite
     alternate;
 }
+ 
+
+  .clothing-hero .arrivals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    bottom: 30%;
+    left: 40%;
+  }
+  .clothing-hero .arrivals p {
+    font-size: 1.5rem;
+    color: #bf8211;
+    font-weight: 700;
+  }
+
+ 
+ 
 
 @keyframes furniture-promo  {
   0% {
@@ -405,8 +419,7 @@ a {
   .btn {
     background:  #ff8400;
   font-weight: 800;
-  padding: 0.5rem;
-  width: 100px;
+  padding: .5rem 2rem;
   border-radius: 1rem;
   border: none;
   }
@@ -778,6 +791,11 @@ a {
   .footer-container {
     grid-template-columns: repeat(2,1fr);
   }
+
+  
+  .clothing-promo h1,#span{
+    font-size: 2.5rem;
+  }
       
 
 }
@@ -892,6 +910,23 @@ a {
     .clothing-collection,
     .footer-container {
         grid-template-columns: 1fr;
+      }
+
+      .clothing-promo {
+        left: 12%;
+      }
+    
+      .clothing-promo h1,#span{
+        font-size: 1.7rem;
+        font-weight: 700;
+      }
+    
+    
+      .clothing-hero .arrivals {
+        left: 25%;
+      }
+      .clothing-hero .arrivals p {
+        font-size: 1.2rem;
       }
 
     .footer-column.quick-links {
