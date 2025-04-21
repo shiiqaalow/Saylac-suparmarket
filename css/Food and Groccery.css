@@ -356,8 +356,8 @@ a {
 /* Grocery hero section */
 
 .Grocery-hero img {
-    width: 40%;
-    height: 350px;
+    width: 50%;
+    height: 450px;
     margin-right: 7rem;
     animation: shake 500ms ease-in-out;
   }
@@ -398,7 +398,7 @@ a {
     align-items: center;
     gap: 1rem;
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 10%;
   }
 
@@ -410,34 +410,10 @@ a {
 
   .Grocery-promo h1 {
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    text-align: center;
+    font-style: italic;
     text-transform: uppercase;
-  }
-
-
-  .Grocery-promo #promo-amount { 
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
-
-  .Grocery-promo span {
-    color: #ff9a03;
-    font-size: 1.5rem;
-    animation: furniture-promo 0.75s cubic-bezier(0.49, 0, 0.89, 0.74) infinite
-    alternate;
-}
- 
-
-  .Grocery-hero .arrivals {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    position: absolute;
-    bottom: 30%;
-    left: 40%;
   }
 
   .Grocery-promo .btn {
@@ -458,6 +434,173 @@ a {
       border: 2px solid #ff8400;
   }
 
+  
+  .Grocery-banners img {
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .Grocery-banners {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-block: 4rem;
+  }
+
+  .Grocery-banners div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+
+  
+  /* Exclusive products  */
+
+  .Grocery-tittle    {
+    display: flex;
+    justify-content: center;
+    padding-block: 3rem;
+    font-size: 2rem;
+  }
+
+
+    
+/* Grocery-products */
+
+.Grocery-collection {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 3rem;
+}
+
+
+.Grocery-collection-header {
+display: flex;
+margin-block: 5rem;
+font-size: 2rem;
+border-bottom: 4px solid #2799dc;
+width: max-content;
+padding: 1rem;
+}
+
+
+.Grocery-collection-items img {
+width: 100%;
+height: 200px;
+border-radius: 1rem;
+}
+
+
+.Grocery-collection-items{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+text-align: center;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+backdrop-filter: blur(10px);
+padding: 1rem .3rem;
+border-radius: 1rem;
+position: relative;
+animation: 0.5s ease-in-out;
+}
+
+
+.Grocery-collection-items p {
+font-size: 1rem;
+font-weight: 800;
+margin-bottom: 0.5rem;
+color: black;
+}
+
+
+.Grocery-collection-items span {
+color: #ff8400;
+font-size: 1rem;
+font-weight: 700;
+}
+
+
+.Grocery-product-action button {
+position: absolute;
+top: 50px;
+right: 10px;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+border: none;
+background-color: transparent;
+opacity: 0;
+}
+
+
+.Grocery-product-action button i {
+font-size: 1.3rem;
+background-color: #fff;
+color: #38b6ff;
+padding: 0.5rem;
+border-radius: 50%;
+}
+
+
+.Grocery-product-action button i:hover {
+color: #fff;
+background-color: #38b6ff;
+}
+
+
+.Grocery-collection-items:hover {
+transform: scale(1.03);
+box-shadow: 0 0 90px #888b93;
+.trending-product-action button {
+  opacity: 1;
+}
+
+.Grocery-product-action button {
+  opacity: 1;
+}
+
+} 
+
+.price-tag {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price-tag .btn {
+  background:  #ff8400;
+font-weight: 800;
+padding: 0.5rem;
+border-radius: 1rem;
+border: none;
+}
+.price-tag .btn:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #ff8400;
+}
+
+.product-rating i {
+  color: #ffa81d;
+}
+
+
+.price-tag.btn {
+  background:  #ff8400;
+font-weight: 800;
+text-transform: uppercase;
+padding: .5rem 2rem;
+border-radius: 1rem;
+border: none;
+}
+.price-tag.btn:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #ff8400;
+}
 
 
   
