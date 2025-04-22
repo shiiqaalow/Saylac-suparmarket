@@ -352,6 +352,79 @@ a {
     }
   }
 
+  
+/* Grocery hero section */
+
+.Grocery-hero {
+    position: relative;
+    background: url("../assets/Web\ Images/banner-1.jpg") center/cover no-repeat;
+    height: 80vh;
+    margin-block: 3rem;
+    font-weight: 700;
+    animation: float 7s infinite ease-in-out;
+  }
+
+
+.Grocery-img img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 400px;
+    margin-right: 7rem;
+    animation: slide 1.5s ease-in-out;
+  }
+
+  @keyframes slide {
+   
+    0% {
+      transform: translateX(-1420px);
+    }
+    100% {
+      transform: translateX( 0);
+    }
+  }
+  
+  
+  .Grocery-promo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+  }
+
+  .Grocery-promo p {
+    font-size: 1rem;
+    line-height: 25px;
+    color: black;
+  }
+
+  .Grocery-promo h1 {
+    font-size: 3.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
+  .Grocery-promo .btn {
+    background:  #ff8400;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  
+  .Grocery-promo .btn:hover {
+   background: transparent;
+      cursor: pointer;
+      border: 2px solid #ff8400;
+  }
+
 
   
 
