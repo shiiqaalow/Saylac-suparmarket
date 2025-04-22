@@ -570,18 +570,6 @@ box-shadow: 0 0 90px #888b93;
   align-items: center;
 }
 
-.price-tag .btn {
-  background:  #ff8400;
-font-weight: 800;
-padding: 0.5rem;
-border-radius: 1rem;
-border: none;
-}
-.price-tag .btn:hover {
-  background: transparent;
-  cursor: pointer;
-  border: 2px solid #ff8400;
-}
 
 .product-rating i {
   color: #ffa81d;
