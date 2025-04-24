@@ -483,9 +483,9 @@ a {
 
 .promo-info .promo-btn:hover {
   width: 150px;
- background: transparent;
-    cursor: pointer;
-    border: 2px solid #ff8400;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #ff8400;
 }
 
 
