@@ -29,7 +29,7 @@ h6 {
 }
 
 span {
-  color: #bf8211;
+  color: #ff8400;
 }
 
 i {
@@ -545,19 +545,59 @@ box-shadow: 0 0 90px #888b93;
 }
 
 
-.price-tag .btn {
+.price-tag .btn,
+.Sports-promo .btn {
   background:  #ff8400;
-font-weight: 800;
-text-transform: uppercase;
-padding: .5rem 2rem;
-border-radius: 1rem;
-border: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: .5rem 2rem;
+  border-radius: 1rem;
+  border: none;
 }
-.price-tag .btn:hover {
+.price-tag .btn:hover, 
+.Sports-promo .btn:hover {
   background: transparent;
   cursor: pointer;
   border: 2px solid #ff8400;
 }
+
+
+
+
+
+/* food-banner */
+
+.Sports-banner {
+  position: relative;
+  margin-block: 5rem;
+}
+
+
+.Sports-banner img {
+  width: 100%;
+  height: 650px;
+}
+
+.Sports-promo {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.Sports-promo * {
+  display: block;
+  padding-bottom: .8rem;
+}
+
+.Sports-promo span {
+  color: #ff8400;
+}
+
+.Sports-promo h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
 
 
   
@@ -767,6 +807,11 @@ border: none;
         color: #fff;
         border-radius: 0.5rem;
       }
+
+      .Sports-collection,
+      .footer-container {
+        grid-template-columns: repeat(2,1fr);
+      }
 }
 
 
@@ -865,5 +910,14 @@ border: none;
       padding: 0.3rem;
       color: #fff;
       border-radius: 0.5rem;
+    }
+
+    .Sports-collection,
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-column.quick-links {
+      align-items: self-start;
     }
 }
