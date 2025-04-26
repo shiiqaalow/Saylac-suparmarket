@@ -405,6 +405,67 @@ a {
   
   }
 
+
+  
+  /* promotion section  */
+  
+  .promotions img {
+    width: 500px;
+    height: 350px;
+    /* padding-left: 2rem; */
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+  }
+  
+  .promo-1 img,
+  .promo-2 img {
+    transition: 4s ease-in-out;
+  }
+  
+  .promotions {
+    display: flex;
+    justify-content: space-evenly;
+    margin-block: 4rem;
+  }
+  
+  .promo-1:hover,
+  .promo-2:hover {
+    transform: scale(1.1);
+  }
+  
+  .promo-1,
+  .promo-2 {
+    position: relative;
+    margin-top: 5rem;
+  }
+
+  .promo-info,
+  .promo-info {
+    position: absolute;
+    bottom: 15%;
+    left: 12%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding-left: -3rem;
+  }
+
+  .promo-info span#promo-amount {
+    font-size: 1.5rem;
+    font-weight: 800;   
+  }
+
+
+  .promo-info span {
+    color: #fff;
+  }
+
+
+  .promo-info h1 {
+    color: #fff;
+    font-size: 2rem;
+  }
+
   
 
 /* footer section */
