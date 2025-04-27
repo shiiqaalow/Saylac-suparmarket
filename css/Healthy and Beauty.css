@@ -810,6 +810,11 @@ box-shadow: 0 0 90px #888b93;
         color: #fff;
         border-radius: 0.5rem;
       }
+
+      .Beauty-collection,
+      .footer-container {
+        grid-template-columns: repeat(2,1fr);
+      }
 }
 
 
@@ -908,5 +913,18 @@ box-shadow: 0 0 90px #888b93;
       padding: 0.3rem;
       color: #fff;
       border-radius: 0.5rem;
+    }
+
+    .Beauty-collection,
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+
+    .Beauty-collection-header h1 {
+      font-size: 1.3rem;
+    }
+
+    .footer-column.quick-links {
+      align-items: self-start;
     }
 }
