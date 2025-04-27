@@ -603,6 +603,53 @@ box-shadow: 0 0 90px #888b93;
   border: 2px solid #ff8400;
 }
 
+/* Health-Beauty-banner  */
+
+.Beauty-banner {
+  background: url("../assets/Product Images/Health and Beauty/bgimage.jpg") center/cover no-repeat;
+  height: 90vh;
+  position: relative;
+  margin-block: 5rem;
+} 
+
+
+.absolute-img img {
+  width: 100%;
+}
+
+
+.absolute-img  {
+  position: absolute;
+  top: 20%;
+  left: 2%;
+}
+
+.Beauty-promo {
+  position: absolute;
+  top: 35%;
+  right: 2%;
+}
+
+.Beauty-promo h1 {
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 4rem;
+
+}
+
+
+.Beauty-promo p {
+  color: black;
+  font-weight: 600;
+  background: #ff8400;
+  width: max-content;
+  padding: 0 .5rem;
+  margin-bottom: .8rem;
+  border-radius: 2rem;
+}
+
+
+
   
 
 /* footer section */
@@ -811,9 +858,29 @@ box-shadow: 0 0 90px #888b93;
         border-radius: 0.5rem;
       }
 
+      .promotions {
+        flex-direction: column;
+        align-items: center;
+      }
+
       .Beauty-collection,
       .footer-container {
         grid-template-columns: repeat(2,1fr);
+      }
+
+      .absolute-img  {
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+      }
+      
+      .Beauty-promo {
+        position: absolute;
+        top: 0;
+        right: 4%;
+      }
+      .Beauty-promo {
+        line-height: ;
       }
 }
 
