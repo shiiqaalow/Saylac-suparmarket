@@ -352,6 +352,64 @@ a {
     }
   }
 
+  
+/* Toys hero section */
+
+.Toys-hero {
+    position: relative;
+    background: url("../assets/Web\ Images/Toys_Banner_bg_static.jpg") center/cover no-repeat;
+    height: 90vh;
+    margin-block: 3rem;
+    font-weight: 700;
+  }
+
+
+.Toys-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .Toys-promo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+
+  .Toys-promo p {
+    line-height: 25px;
+    color: black;
+  }
+
+  .Toys-promo h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .Toys-promo .btn {
+    background:  #ff8400;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  
+  .Toys .btn:hover {
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #fff;
+  }
 
   
 
@@ -658,5 +716,16 @@ a {
       padding: 0.3rem;
       color: #fff;
       border-radius: 0.5rem;
+    }
+
+    .Toys-hero {
+        height: 60vh;
+    }
+    .Toys-img img {
+        height: 60vh;
+    }
+
+    .Toys-promo h1 {
+        font-size: 2rem;
     }
 }
