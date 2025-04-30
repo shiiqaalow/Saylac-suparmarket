@@ -618,6 +618,10 @@ a {
         color: #fff;
         border-radius: 0.5rem;
       }
+
+      .footer-container {
+        grid-template-columns: repeat(2,1fr);
+      }
 }
 
 
@@ -727,5 +731,13 @@ a {
 
     .Toys-promo h1 {
         font-size: 2rem;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-column.quick-links {
+        align-items: self-start;
     }
 }
