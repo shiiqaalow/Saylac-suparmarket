@@ -753,7 +753,7 @@ border: 2px solid #ff8400;
     color: #fff;
     border-radius: 0.5rem;
   }
-
+  .Toys-collection,
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -853,6 +853,10 @@ border: 2px solid #ff8400;
     border-radius: 0.5rem;
   }
 
+  .user-choice {
+    flex-wrap: wrap-reverse;
+  }
+
   .Toys-hero {
     height: 60vh;
   }
@@ -864,6 +868,17 @@ border: 2px solid #ff8400;
     font-size: 2rem;
   }
 
+  .Toys-collection-header h1 {
+    font-size: 2rem;
+  }
+
+
+  .Toys-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Toys-collection,
   .footer-container {
     grid-template-columns: 1fr;
   }
