@@ -319,7 +319,12 @@ select {
   display: none;
 }
 
-.cart {
+.cart  a::after {
+  background: none;
+}
+
+
+.cart  {
   margin-left: 2rem;
   font-size: 1.3rem;
   position: relative;
@@ -340,7 +345,7 @@ select {
   }
 }
 
-/* herosection */
+/* hero section */
 
 .hero-img img,
 .fruits img {
@@ -372,15 +377,10 @@ select {
   margin-top: 3rem;
   border-bottom: 1px double #f1a211;
   font-size: 1.5rem;
-  color: #f1a211;
   width: max-content;
   padding: 2rem;
 }
 
-.promotion--tittle h1,
-.testimonial-header h1 {
-  color: #f1a211;
-}
 
 .promotion--tittle i {
   font-size: 2.5rem;
@@ -402,7 +402,7 @@ select {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  margin-block: 4rem;
+  margin-block: 2rem;
 }
 
 .promo-1:hover,
@@ -428,10 +428,10 @@ select {
 }
 
 .promo-tittle-1 h2,
-.promo-tittle-2 h2 {
+.promo-tittle-1 p {
   color: #060f0f;
 }
-.promo-tittle-1 p,
+.promo-tittle-2 h2,
 .promo-tittle-2 p {
   color: #fff;
 }
@@ -441,7 +441,6 @@ select {
   background: #ff8400;
   font-weight: 800;
   padding: 0.5rem;
-  /* width: 100px; */
   border-radius: 1rem;
   border: none;
 }
@@ -848,13 +847,15 @@ select {
 }
 
 .fruits-tittle .btn {
-  background: #2799dc;
+  background: #ff8400;
   border-radius: 1rem;
   border: none;
+  padding: .5rem 2rem;
 }
 
 .fruits-tittle .btn:hover {
-  background: #38b6ff;
+  background: transparent;
+  border: 2px solid #ff8400;
 }
 
 /* top categories */

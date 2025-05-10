@@ -344,11 +344,12 @@ select {
 
 /* Toys hero section */
 
-.Toys-hero {
+.Toys-hero,
+.Toys-Banner {
   position: relative;
   background: url("../assets/Web\ Images/Toys_Banner_bg_static.jpg")
     center/cover no-repeat;
-  height: 90vh;
+  height: 80vh;
   margin-block: 3rem;
   font-weight: 700;
 }
@@ -383,7 +384,8 @@ select {
   text-align: center;
 }
 
-.Toys-promo .btn {
+.Toys-promo .btn,
+.Toys-Banner-promo .btn {
   background: #ff8400;
   font-weight: 800;
   text-transform: uppercase;
@@ -392,10 +394,12 @@ select {
   border: none;
 }
 
-.Toys .btn:hover {
+.Toys .btn:hover,
+.Toys-Banner-promo .btn:hover {
   background: transparent;
   cursor: pointer;
-  border: 2px solid #fff;
+  border: 2px solid #ff8400;
+  color: #fff;
 }
 
 /* Toys-grid */
@@ -552,6 +556,58 @@ border: 2px solid #ff8400;
 
 .product-rating i {
   color: #ffa81d;
+}
+
+
+/*Toys-banner */
+
+.Toys-Banner {
+  position: relative;
+  margin-block: 5rem;
+}
+
+.Toys-Banner img {
+  width: 50%;
+  height: 75vh;
+}
+
+.Toys-Banner-promo {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Toys-Banner-promo * {
+  display: block;
+  padding-bottom: 0.8rem;
+}
+
+.Toys-Banner-promo span {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: #fff;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: .5rem 1rem;
+  margin-block: 2rem;
+}
+
+.Toys-Banner-promo h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+.Toys-Banner-promo p {
+  color: black;
+  font-size: .8rem;
+  line-height: 1.5rem;
+}
+.Toys-Banner-promo .btn {
+  text-transform: uppercase;
 }
 
 
