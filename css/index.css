@@ -490,7 +490,7 @@ select {
 .furniture-hero {
   background: url("https://media.istockphoto.com/id/1990444472/photo/scandinavian-style-cozy-living-room-interior.jpg?s=612x612&w=0&k=20&c=qgzrs_4vKDrOVo6gVc0EVb9-PziE-REbV9DcM5ZAfig=")
     center/cover no-repeat;
-  height: 50vh;
+  height: 80vh;
 }
 
 .furniture-promo {
@@ -500,7 +500,7 @@ select {
   align-items: center;
   gap: 1rem;
   text-align: center;
-  padding-top: 6rem;
+  height: 80vh;
 }
 
 .furniture-promo span {

@@ -342,6 +342,64 @@ select {
   }
 }
 
+
+/* technology hero section */
+
+.Technology-hero img {
+  width: 100%;
+  height: 650px;
+}
+
+.Technology-hero {
+  position: relative;
+  margin-block: 3rem;
+  animation: float 7s infinite ease-in-out;
+}
+
+.Technology-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.Technology-promo p {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: black;
+}
+
+.Technology-promo h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.Technology-hero .btn {
+  background: #ff8400;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+
+.Technology-hero .btn:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #ff8400;
+  color: #fff;
+}
+
+
 /* women-products */
 
 .women-collection {
